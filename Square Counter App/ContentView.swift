@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var base: Int = 1
     
     var body: some View {
         VStack {
@@ -16,7 +17,8 @@ struct ContentView: View {
             Spacer()
             
             HStack(alignment: .top) {
-                Text("5")
+                
+                Text("\(base)")
                     .font(.system(size: 96))
                 
                 Text("2")
